@@ -51,6 +51,14 @@ body {
     margin: 1rem;
 }
 
+@media (min-width: 985px) {
+    .card {
+        width: calc(3 * var(--grid-width));
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: var(--grid-height);
+    }
+}
+
 section {
     --_background-color: var(--background-color, pink);
     --_icon-color: var(--icon-color, brown);
@@ -100,9 +108,17 @@ svg path {
 }
 
 button {
-    border: hsl(var(--clr-neutral-150-hsl));
+    border: 2px solid hsl(var(--clr-neutral-150-hsl));
     border-radius: calc(var(--border-radius) * 3);
     font-size: var(--fs-p);
     color: var(--_background-color);
     width: 65%;
+    cursor: pointer;
+}
+
+button:active,
+button:focus {
+    color: hsl(var(--clr-neutral-150-hsl));
+    background-color: var(--_background-color);
+    bo
 }
