@@ -120,5 +120,4 @@ button:active,
 button:focus {
     color: hsl(var(--clr-neutral-150-hsl));
     background-color: var(--_background-color);
-    bo
 }
